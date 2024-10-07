@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+
+<body>
+    <table border = 1 width="30%">
+        <tr>
+            <th style="font-size: xx-large;  font-style: italic;">Book Name</th>
+            <th style="font-size: xx-large;  font-style: italic;">Borrowed Qty</th>
+        </tr>
+        {% for arr in books %}
+        <tr>
+            <td style="font-size: xx-large;  font-style: italic;text-align: center;"> {{arr[1]}} </td>
+            <td style="font-size: xx-large;text-align: center;"> {{ arr[2] }} </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <button style="font-size: large;  font-style: italic; color: brown;">Show avaliable books</button>
+    <button style="font-size: large;  font-style: italic; color: brown;">Return books</button>
+</body>
+
+</html>
