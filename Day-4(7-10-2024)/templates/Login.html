@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<form method = "POST" action = "{{ url_for('signUp') }}">
+<p>Id: </p>
+<input type="number" placeholder="id" name="userId"></input>
+
+<p>name: </p>
+<input type="text" placeholder="name" name="name"></input>
+
+<br>
+<br>
+
+<label for="radioBtn">Are you Premium Member ?</label>
+<input type="radio" value ="1" name ="radioBtn">yes</input>
+<input type="radio"  value = "0" name="radioBtn">no</input>
+<br>
+<br>
+
+<button type="submit">submit</button>
+
+</form>
+
+
+
+{% endblock %}
